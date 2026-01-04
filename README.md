@@ -47,7 +47,7 @@ graph TD
 ---
 
 ## 🛠️ Prérequis
-* Un compte **AWS Academy** (Learner Lab) ou **AWS Standard**.
+* Un compte **AWS Academy** (Learner Lab).
 * Un client SSH (Terminal, Putty) et un client RDP.
 * La clé privée `.pem` générée lors de la création des instances.
 
@@ -94,6 +94,7 @@ sudo apt install zabbix-agent
 sudo nano /etc/zabbix/zabbix_agentd.conf
 # Modifier : Server=<IP_PRIVEE_SERVEUR_ZABBIX>
 sudo systemctl restart zabbix-agent
+sudo systemctl enable zabbix-agent
 ```
 
 #### 🪟 Client Windows
